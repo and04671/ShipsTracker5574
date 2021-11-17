@@ -1,0 +1,85 @@
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color:lightseagreen;
+  font-family: "Helvetica";
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "Papyrus";
+  font-size: 40px;
+}
+
+h2 {
+  font-family: "Papyrus";
+  font-size: 20px;
+  text-align: center;
+}
+
+th,td { 
+  border: 1px solid black;
+}
+
+.image {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.fill {
+   object-fit: fill;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 5px;
+}
+
+.creditsbox {
+    grid-column: 1;
+    grid-row: 1/3;   
+    border: 1px solid black;  
+}
+
+.aboutbox {
+    grid-column: 1;
+    grid-row: 3 / 6;
+    border: 1px solid black; 
+}  
+
+.titlebox {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    border: 1px solid black; 
+}
+
+.mapbox {
+    grid-column: 2;
+    grid-row: 2 / 6;
+    border: 1px solid black; 
+    object-position: 50% 50%;
+}
+
+.stuffbox {
+    grid-column: 3;
+    grid-row: 1; 
+    border: 1px solid black; 
+}
+
+.tablebox {
+    grid-column: 3;
+    grid-row: 2 / 4; 
+    border: 1px solid black; 
+}
+
+.boxbox {
+  grid-column: 3;
+  grid-row: 4 / 6;
+  border: 1px solid black; 
+}
+

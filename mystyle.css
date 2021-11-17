@@ -1,0 +1,57 @@
+.container {
+  display: inline-flex;
+  align-items: right;
+  justify-content: center
+}
+
+img {
+  max-width: 100%;
+}
+
+.image {
+  flex-basis: 40%;
+  display: flex;
+}
+
+.box1 {
+  font-size: 18px;
+  padding-left: 20px;
+  width: 15em;
+  border: 1px solid black;
+}
+
+h1 {
+  text-align:center;
+  font-size: 300%;
+  border: 1px solid black;
+  width: 24em;
+}
+
+h2 {
+  text-align:center;
+  font-size: 300%;
+}
+
+h3 {
+  text-align:center;
+  font-size: 100%;
+}
+
+p {
+  text-align: left;
+}
+
+body {
+  background-color:lightseagreen;
+}
+
+table,th,td {
+  border: 1px solid black;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
