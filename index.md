@@ -10,5 +10,5 @@ Sum stuff
 
  and ![Image](src)
 ```
-<iframe src="https://github.com/and04671/ShipsTracker5574/blob/gh-pages/index.html" height="500" width="500"></iframe>
+<iframe width="100%" height="300" src="//jsfiddle.net/2w713hdu/embedded/js,html,css/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
