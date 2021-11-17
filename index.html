@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create web map from id</title>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/3.14/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.14/esri/css/esri.css">
+    <script src="https://js.arcgis.com/3.14/init.js"></script>
+    <style>
+      body, html {
+        width: 100%;
+        height: 95%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+      }
+      #informationArea {
+        height: 10%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: grey;
+      }
+      #buttonContainer {
+        position: absolute;
+        top: 10px;
+        right: 10px
+      }
+   </style>
+  </head>
+
+<body onload="createMap()">
+  <!--A container for the map-->
+  <div id="map">
+  </div>
+
+  <!--A container the information-->
+  <div id="informationArea">
+  </div>
+
+  <!--A container the button-->
+  <div id="buttonContainer">
+    <button id="clickButton">Click</button>
+  </div>
+  
+  <script>
+    function createMap(){
+      //This loads the esri.map library
+      dojo.require("esri.map");
+    
+      //This creates the map, using the specified webmapID
+      esri.arcgis.utils.createMap("baeb5211864d40a7a76f1648842d5de4", "map");
+      //Adds a functionto the button
+      document.getElementById("clickButton").onclick = aFunction;
+    }
+    //A function
+    function aFunction() {
+      alert("Alert");
+      document.getElementById("informationArea").innerHTML = "New Message";
+    }
+      
+  </script>
+</body>
+</html>
